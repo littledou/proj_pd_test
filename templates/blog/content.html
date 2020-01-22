@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block title %}blog article{%endblock%}
+
+{%block content%}
+<div class="row text-center vertical-middle-sm">
+    <h1>{{article.title}}</h1>
+</div>
+
+<div class="row">
+    <div class="col-xs-12 col-md-8">
+        <p class="text-center">
+            <span>
+                {{article.author.name}}
+            </span>
+            <span style="margin-left: 20px">
+                {{ publish }}
+            </span>
+        </p>
+        <div>
+            {{article.body}}
+        </div>
+    </div>
+    
+    <div class="col-xs-6 col-md-4">
+        <h2>广告</h2>
+        <p>www.so.com</p>
+        <img width="200px" src="http://tu.maomaogougou.cn/picture/2015/12/8ecd86664fb20d69f84f66433098378b.jpg">
+    </div>
+</div>
+
+{%endblock%}
