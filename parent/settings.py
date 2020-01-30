@@ -123,3 +123,5 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS=(
     os.path.join(BASE_DIR, "static"),
 )
+# 指定收集静态文件的路径
+# STATIC_ROOT = '/usr/local/etc/nginx/static'
